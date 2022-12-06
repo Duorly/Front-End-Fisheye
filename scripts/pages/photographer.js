@@ -101,26 +101,6 @@ async function init() {
 
 }
 
-function sortSectionGallery(){
-
-    let sortValue = document.getElementById("filter-order").value;
-
-    let items = document.querySelectorAll('.gallery-item');
-
-    [].slice.call(items).sort(function(a, b) {
-        let textA = a.getAttribute('data-'+sortValue);
-        let textB = b.getAttribute('data-'+sortValue);
-        if(sortValue == 'likes'){
-            return (parseInt(textA) < parseInt(textB)) ? -1 : (parseInt(textA) > parseInt(textB)) ? 1 : 0;
-        } else {
-            return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-        }
-
-    }).forEach(function(el) {el.parentNode.appendChild(el)});
-
-
-}
-
 window.onload = function() {
 
     // GESTION DES CLICKS SUR LES LIKES
