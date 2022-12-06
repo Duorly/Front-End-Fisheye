@@ -190,12 +190,11 @@ form textarea {
 
 
 
-
+/** Custom selectbox style **/
 
 .sort-title {
     display: flex;
     width: 110px;
-    height: 60px;
     align-items: center;
     font-size: 1.3rem;
     font-weight: 500;
@@ -203,7 +202,6 @@ form textarea {
   
   #sort-wrapper {
     position: relative;
-  
     width: 170px;
     height: 180px;
   }
@@ -212,7 +210,7 @@ form textarea {
     display: flex;
     width: 90%;
     height: 50px;
-    margin: 0 auto;
+    margin: 0 10px;
   }
   
   .sort-base {

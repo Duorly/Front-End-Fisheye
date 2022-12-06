@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 function photoFactory(data, position) {
-  const { id, photographerId, title, image, video, likes, date, price } = data;
+  const { id, photographerId, title, image, video, likes, date } = data;
 
   const mediaImage = `assets/photographers/${photographerId}/${image}`;
   const mediaVideo = `assets/photographers/${photographerId}/${video}`;
