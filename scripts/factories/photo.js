@@ -21,7 +21,7 @@ function photoFactory(data, position) {
         let media = document.createElement( 'img' );
         media.setAttribute("src", mediaImage);
         media.setAttribute("class", 'gallery-item-img');
-        media.setAttribute("alt", title);
+        media.setAttribute("alt",  'PHOTOGRAPHY OF' + title.toUpperCase());
         media.setAttribute("data-title", title);
         media.setAttribute("data-type", 'img');
         media.setAttribute("data-position", position);
@@ -48,8 +48,8 @@ function photoFactory(data, position) {
         const informations = document.createElement( 'div' );
         informations.setAttribute('class', 'gallery-item-informations');
 
-        const h5 = document.createElement( 'h5' );
-        h5.textContent = title;
+        const h2 = document.createElement( 'h2' );
+        h2.textContent = title;
 
         const divlikes = document.createElement( 'button' );
         divlikes.setAttribute('class', 'gallery-item-likes btn-like light-button');
@@ -67,7 +67,7 @@ function photoFactory(data, position) {
 
         divlikes.appendChild(counter);
         divlikes.appendChild(imglike);
-        informations.appendChild(h5);
+        informations.appendChild(h2);
         informations.appendChild(divlikes);
         button.appendChild(media);
         item.appendChild(button);
