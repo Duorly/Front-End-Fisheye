@@ -28,6 +28,8 @@ function photoFactory(data, position) {
 
         if(video != null){
             const source = document.createElement( 'source' );
+            const descript = document.createElement( 'p' );
+            descript.innerHTML = title + "Can't play in your browser";
             source.setAttribute("src", mediaVideo);
             source.setAttribute("type", "video/mp4")
 
@@ -38,10 +40,12 @@ function photoFactory(data, position) {
             media.setAttribute("loop", "");
             media.setAttribute("class", 'gallery-item-img');
             media.setAttribute("data-title", title);
-            media.setAttribute("alt", title);
+            media.setAttribute("alt", 'VIDEO OF ' + title.toUpperCase());
             media.setAttribute("src", mediaVideo);
             media.setAttribute("data-type", 'video');
+            media.setAttribute("data-position", position);
             media.appendChild(source);
+            media.appendChild(descript);
         }
 
 
