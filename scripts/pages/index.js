@@ -1,3 +1,6 @@
+/* 
+eslint-disable no-undef 
+*/
 /**
  * Fonction pour récupérer les photographes à partir d'un json
  * @returns {Promise<{photographers: ({country: string, city: string, price: number, name: string, tagline: string, id: number, portrait: string}|{country: string, city: string, price: number, name: string, tagline: string, id: number, portrait: string})[]}>}

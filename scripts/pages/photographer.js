@@ -1,3 +1,10 @@
+/* 
+eslint-disable no-undef 
+*/
+/* 
+eslint-disable no-unused-vars 
+*/
+
 //Mettre le code JavaScript lié à la page photographer.html
 
 /**
